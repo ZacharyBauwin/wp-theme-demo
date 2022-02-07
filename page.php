@@ -2,20 +2,20 @@
 
 <?php if(have_posts(  )) : ?>
             
-            <?php while(have_posts(  )) : the_post(  ); ?>
+    <?php while(have_posts(  )) : the_post(  ); ?>
     
-            <article class="flex">
+        <article class="flex">
     
-                <div class="texte-article">
+            <div class="texte-article">
     
-                    <h2><?php the_title(  ); ?></h2>
-                    <p><?php the_content(  ); ?></p>
+                <h2><?php the_title(  ); ?></h2>
+                <p><?php the_content(  ); ?></p>
 
-                </div>
-            </article>
+            </div>
+        </article>
     
-            <?php endwhile ?>
+    <?php endwhile ?>
                     
-        <?php endif; ?>
+<?php endif; ?>
 
 <?php get_footer(  ) ?>
